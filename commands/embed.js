@@ -9,9 +9,9 @@ module.exports = {
 		// inside a command, event listener, etc.
 		const exampleEmbed = new EmbedBuilder()
 			.setColor(0x0099FF)
-			.setTitle('Some title')
+			.setTitle('Le Serveur à son propre BOT')
 			.setURL('https://discord.js.org/')
-			.setAuthor({ name: 'Some name', iconURL: 'https://i.imgur.com/AfFp7pu.png', url: 'https://discord.js.org' })
+			.setAuthor({ name: 'Pro Otaku', iconURL: 'https://i.imgur.com/AfFp7pu.png' })
 			.setDescription('Some description here')
 			.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 			.addFields(

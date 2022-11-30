@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 }
 
 client.once(Events.ClientReady, () => {
-	console.log('Ready!');
+	console.log('Le Bot est fonctionnel');
 });
 
 client.on(Events.InteractionCreate, async interaction => {
