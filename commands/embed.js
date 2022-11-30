@@ -1,11 +1,11 @@
 // at the top of your file
-const { SlashCommandBuilder, EmbedBuilder} = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('embed')
 		.setDescription('return an embed'),
-	async execute(interaction, client) {
+	async execute(interaction) {
 		// inside a command, event listener, etc.
 		const exampleEmbed = new EmbedBuilder()
 			.setColor(0x0099FF)
