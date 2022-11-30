@@ -1,7 +1,7 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000P\u0000a\u0000r\u0000a\u0000d\u0000i\u0000s\u0000e\u0000-\u0000B\u0000o\u0000t\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "eslint": "^8.28.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colin-reist/bot-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/colin-reist/bot-bot/issues"
+  },
+  "homepage": "https://github.com/colin-reist/bot-bot#readme"
 }
