@@ -2,8 +2,10 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
+
 	data: new SlashCommandBuilder()
 		.setName('embed')
+		.setDefaultMemberPermissions('0')
 		.setDescription('return an embed'),
 	async execute(interaction) {
 		// inside a command, event listener, etc.
