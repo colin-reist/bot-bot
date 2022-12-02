@@ -17,7 +17,8 @@ for (const file of commandFiles) {
 }
 
 client.once(Events.ClientReady, () => {
-	console.log('Le Bot est fonctionnel');
+	// eslint-disable-next-line quotes
+	console.log(`it's time to LEWD`);
 });
 
 client.on(Events.InteractionCreate, async interaction => {
