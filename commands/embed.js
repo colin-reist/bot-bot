@@ -54,11 +54,11 @@ module.exports = {
 	async execute(interaction) {
 
 		const titre = interaction.options.getString('titre') ?? 'aucun titre fourni';
-		const titre_texte = interaction.options.getString('titre_texte') ?? '';
-		const texte1 = interaction.options.getString('texte1') ?? '';
-		const texte2 = interaction.options.getString('texte2') ?? '';
-		const texte3 = interaction.options.getString('texte3') ?? '';
-		const petite_image = interaction.options.getString('lien-small-image') ?? '';
+		const titre_texte = interaction.options.getString('titre_texte');
+		const texte1 = interaction.options.getString('texte1');
+		const texte2 = interaction.options.getString('texte2');
+		const texte3 = interaction.options.getString('texte3');
+		const petite_image = interaction.options.getString('lien-small-image');
 		const auteur = interaction.options.getString('image-auteur');
 
 		console.log('la capture des valeurs suivante :');
@@ -78,27 +78,27 @@ module.exports = {
 		}
 
 		// Rajout d'une image d'icone
-		if (petite_image !== '') {
+		if (petite_image !== null) {
 			exampleEmbed.setThumbnail(petite_image);
 		}
 
-		if (titre_texte !== '') {
+		if (titre_texte !== null) {
 			exampleEmbed.addFields(
 				{ name: titre_texte },
 			);
 		}
 		// Rajout des champs texte
-		if (texte1 !== '') {
+		if (texte1 !== null) {
 			exampleEmbed.addFields(
 				{ value: texte1 },
 			);
 		}
-		if (texte2 !== '') {
+		if (texte2 !== null) {
 			exampleEmbed.addFields(
 				{ value: texte2 },
 			);
 		}
-		if (texte3 !== '') {
+		if (texte3 !== null) {
 			exampleEmbed.addFields(
 				{ value: texte3 },
 			);
